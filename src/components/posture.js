@@ -9,7 +9,9 @@ const Posture = ({ onLoaded }) => {
   const [osStatus, setOsStatus] = useState({ message: "", passed: false });
   const [warpEnabled, setWarpEnabled] = useState(null);
   const [tooltipStyles, setTooltipStyles] = useState({});
-  const [errorMessage, setErrorMessage] = useState("");
+  // A: Use the variable (if it's part of future logic)
+  setErrorMessage('An error occurred');
+
 
   const tooltipTriggerRef = useRef(null);
 
